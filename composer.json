@@ -1,6 +1,6 @@
 {
     "name": "robiiinos/laravel-time",
-    "description": "Register a '/time' endpoint to your Laravel application.",
+    "description": "Register a '/time' endpoint to your Laravel API.",
     "homepage": "https://github.com/robiiinos/laravel-time",
     "license": "MIT",
     "require": {

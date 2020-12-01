@@ -1,14 +1,14 @@
 # Laravel Time
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/robiiinos/laravel-time.svg?style=flat-square)](https://packagist.org/packages/robiiinos/laravel-time)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/robiiinos/laravel-time/run-tests?label=tests)](https://github.com/robiiinos/laravel-time/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/robiiinos/laravel-time/Tests?label=tests)](https://github.com/robiiinos/laravel-time/actions?query=workflow%3ATests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/robiiinos/laravel-time.svg?style=flat-square)](https://packagist.org/packages/robiiinos/laravel-time)
 
-Register a `/time` endpoint to your Laravel application.
+Register a `/time` endpoint to your Laravel API.
 
 Use case:
 - Endpoint for monitoring.
-- Synchronize other applications with your server (for HMAC signature, ...).
+- Synchronize other applications with your server (for timing security in trading applications, ...).
 
 ## Installation
 
