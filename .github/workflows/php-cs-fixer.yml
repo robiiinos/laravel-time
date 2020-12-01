@@ -1,0 +1,29 @@
+name: PHP CS Fixer
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - develop
+      - master
+
+jobs:
+  php-cs-fixer:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+          coverage: none
+
+      - name: Install dependencies
+        run: composer install -n --prefer-dist
+
+      - name: Run PHP CS Fixer
+        run: ./vendor/bin/php-cs-fixer fix --config=.php_cs.dist
