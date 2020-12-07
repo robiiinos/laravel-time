@@ -14,13 +14,14 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
+        php: [7.4, 8.0]
         laravel: [8.*]
         stability: [prefer-lowest, prefer-stable]
         include:
           - laravel: 8.*
             testbench: 6.*
 
-    name: P7.4 - L${{ matrix.laravel }} - ${{ matrix.stability }}
+    name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }}
 
     steps:
       - name: Checkout code
@@ -29,7 +30,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 7.4
+          php-version: ${{ matrix.php }}
           extensions: curl, dom, gd, json, libxml, mbstring, zip
           coverage: none
 
