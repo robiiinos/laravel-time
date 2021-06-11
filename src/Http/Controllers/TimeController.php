@@ -7,7 +7,7 @@ use Illuminate\Http\JsonResponse;
 class TimeController
 {
     /**
-     * Return current time, in millisecond.
+     * Return current time, with a millisecond precision.
      *
      * @return \Illuminate\Http\JsonResponse
      */
